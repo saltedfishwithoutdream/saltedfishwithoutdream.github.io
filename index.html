@@ -57,6 +57,7 @@ console.log(window.location.href)
  </script>
 
 <script>
+	/**
             ;(function(para) {
               var p = para.sdk_url,
                 n = para.name,
@@ -118,7 +119,10 @@ console.log(window.location.href)
               heatmap: {}
             })
             sensors.quick('autoTrack'); //神策系统必须是 1.4 最新版及以上
+	    */
         </script>
+	
+	<script charset="UTF-8" src="https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.16.15/sensorsdata.min.js"></script> <script charset="UTF-8"> var sensors = window['sensorsDataAnalytic201505']; sensors.init({ server_url: 'https://trackinghub.starbucks.com.cn/sa', heatmap:{scroll_notice_map:'not_collect'}, is_track_single_page:true, use_client_time:true, send_type:'beacon' }); sensors.quick('autoTrack'); </script>
 
 <style>
     
