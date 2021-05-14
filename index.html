@@ -42,7 +42,10 @@ console.log('获取授权', ap.getAuthCode, appId)
    },  function ( res ){
       res.appId=appId
      if (res && res.authCode) {
-	window.location.replace('http://119.45.193.26/ele/test.html?authcode=' + res.authCode);
+	console.log('code', res.authCode);
+	if (url) {
+	    window.location.replace(url + '?authcode=' + res.authCode);
+	}
 	return;
      }
       console.log('支付宝', res);
