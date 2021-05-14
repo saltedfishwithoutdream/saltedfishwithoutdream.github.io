@@ -23,7 +23,7 @@ let search = window.location.search;
 	
 if (search && search.length > 1) {
     search = search.slice(1)
-    let arr = slice.split('&')
+    let arr = search.split('&')
     for (let item of arr) {
     	let [key, value] = item.split('=')
 	if (key === 'url') {
