@@ -29,7 +29,7 @@ if (search && search.length > 1) {
     for (let item of arr) {
     	let [key, value] = item.split('=')
 	if (key === 'url') {
-	    url = value
+	    url = decodeURIComponent(value)
 	    break
 	}
     }
